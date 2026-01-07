@@ -86,5 +86,4 @@ MIT License
  
 ## Author 
 **Yovinne Shadora** 
-- GitHub: https://github.com/Yovinne-Shadora-data
 - Email: yovinne.shadora21@gmail.com 
