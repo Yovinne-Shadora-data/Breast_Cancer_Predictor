@@ -73,7 +73,13 @@ Breast_Cancer_Predictor/
 ÃÄ static/                     # Folder for static files (optional for Flask) 
 ÃÄ templates/                  # Flask HTML templates (optional) 
 ÀÄ README.md 
-``` 
+```
+## Model Evaluation
+
+- Accuracy: 93.86%
+
+![Confusion Matrix](breast_cancer_accuracy_plot.png)
+
  
 ## License 
 MIT License 
