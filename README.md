@@ -65,14 +65,14 @@ python model_accuracy_save_plot.py
 ## Project Structure 
 ``` 
 Breast_Cancer_Predictor/ 
-ÃÄ breast_cancer.csv           # Dataset 
-ÃÄ train_5feature_model.py     # Script to train model and scaler 
-ÃÄ model_accuracy_save_plot.py # Script to evaluate model 
-ÃÄ logistic_model.pkl          # Saved Logistic Regression model 
-ÃÄ scaler.pkl                  # Saved StandardScaler 
-ÃÄ static/                     # Folder for static files (optional for Flask) 
-ÃÄ templates/                  # Flask HTML templates (optional) 
-ÀÄ README.md 
+ÃƒÃ„ breast_cancer.csv           # Dataset 
+ÃƒÃ„ train_5feature_model.py     # Script to train model and scaler 
+ÃƒÃ„ model_accuracy_save_plot.py # Script to evaluate model 
+ÃƒÃ„ logistic_model.pkl          # Saved Logistic Regression model 
+ÃƒÃ„ scaler.pkl                  # Saved StandardScaler 
+ÃƒÃ„ static/                     # Folder for static files (optional for Flask) 
+ÃƒÃ„ templates/                  # Flask HTML templates (optional) 
+Ã€Ã„ README.md 
 ``` 
  
 ## License 
@@ -80,5 +80,5 @@ MIT License
  
 ## Author 
 **Yovinne Shadora** 
-- GitHub: https://github.com/YOUR_USERNAME 
+- GitHub: https://github.com/Yovinne-Shadora-data
 - Email: yovinne.shadora21@gmail.com 
