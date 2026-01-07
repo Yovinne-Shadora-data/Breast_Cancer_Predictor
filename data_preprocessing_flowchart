@@ -1,0 +1,16 @@
+// Data Preprocessing Flowchart
+digraph {
+	A [label="Data Collection (Raw Dataset)"]
+	B [label="Data Cleaning
+(Handle Missing Values and Errors)"]
+	C [label="Feature Selection
+(Identify Relevant Features)"]
+	D [label="Data Normalization / Scaling
+(Standardize or Normalize Data)"]
+	E [label="Model Input
+(Prepared Data for Model Training)"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+}

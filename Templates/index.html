@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Predictor</title>
+    <style>
+        body {
+            background-color: lightpink;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #C71585;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            width: 400px;
+        }
+        .form-box input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .form-box input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #C71585;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .prediction {
+            text-align: center;
+            color: #C71585;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .side-image {
+            flex-shrink: 0;
+            flex: 1;
+        }
+        .side-image img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h2>Breast Cancer Predictor</h2>
+        <div>
+            <a href="/">Home</a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Left Image -->
+        <div class="side-image">
+            <img src="{{ url_for('static', filename='breast_img.png') }}" alt="Breast Cancer Awareness">
+        </div>
+
+        <!-- Form -->
+        <div class="form-box">
+            <h3 style="text-align:center;">Enter Feature Values</h3>
+            <form action="/predict" method="post">
+                {% for feature in ['perimeter_mean','concave points_mean','radius_worst','perimeter_worst','concave points_worst'] %}
+                    <label>{{ feature.replace('_', ' ').title() }}:</label><br>
+                    <input type="text" name="{{ feature }}" required><br>
+                {% endfor %}
+                <input type="submit" value="Predict">
+            </form>
+            {% if prediction %}
+                <div class="prediction">Prediction: {{ prediction }}</div>
+            {% endif %}
+        </div>
+
+        <!-- Right Image -->
+        <div class="side-image">
+            <img src="{{ url_for('static', filename='breast_img.png') }}" alt="Breast Cancer Awareness">
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 Breast Cancer Prediction System
+    </div>
+
+</body>
+</html>
