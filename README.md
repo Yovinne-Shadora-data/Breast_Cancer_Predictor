@@ -21,7 +21,7 @@ A Python-based web and command-line application to predict breast cancer using a
 ## Installation 
 1. Clone this repository: 
 ``bash 
-git clone https://github.com/YOUR_USERNAME/Breast_Cancer_Predictor.git 
+git clone https://github.com/Yovinne-Shadora-data/Breast_Cancer_Predictor.git 
 `` 
 2. Navigate to the project folder: 
 ``bash 
