@@ -45,19 +45,19 @@ A Python-based **command-line and web-ready ML application** to predict breast c
 1. Clone the repository:  
 ```bash
 git clone https://github.com/Yovinne-Shadora-data/Breast_Cancer_Predictor.git
-
+```
 2. Navigate to the project folder:
-cd Breast_Cancer_Predictor
+``cd Breast_Cancer_Predictor``
 3. Create a virtual environment:
-python -m venv venv
+```python -m venv venv```
 4. Activate the virtual environment:
-venv\Scripts\activate
+```venv\Scripts\activate```
 5. Install dependencies
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
-Usage
+## Usage
 Step 1: Train and evaluate models
-python src\models\train_model_upgrade.py
+```python src\models\train_model_upgrade.py```
 
 .Trains Logistic Regression, Random Forest, and SVM
 
@@ -68,13 +68,13 @@ python src\models\train_model_upgrade.py
 .Prints evaluation metrics in CMD
 
 Step 2: Open generated plots
-start src\models\logistic_regression_confusion_matrix.png
+```start src\models\logistic_regression_confusion_matrix.png``
 start src\models\random_forest_confusion_matrix.png
 start src\models\svm_confusion_matrix.png
-start src\models\roc_curves.png
+start src\models\roc_curves.png```
 
-Project Structure
-Breast_Cancer_Predictor/
+## Project Structure
+```Breast_Cancer_Predictor/`
 ├── data/
 │   └── breast_cancer.csv       # Dataset
 ├── src/
@@ -91,12 +91,12 @@ Breast_Cancer_Predictor/
 ├── static/                     # Optional for Flask
 ├── templates/                  # Flask HTML templates
 ├── requirements.txt
-└── README.md
+└── README.md```
 
-License
+## License
 
 MIT License
 
-Author
+## Author
 
-Yovinne Shadora
+## Yovinne Shadora
