@@ -25,8 +25,18 @@ A Python-based **command-line and web-ready ML application** to predict breast c
 | Random Forest          | 96.49%   | 97.56%    | 93.02% | 95.24%   | 0.9971  |
 | SVM                    | 98.25%   | 100.00%   | 95.35% | 97.62%   | 0.9971  |
 
-![ROC Curves](src/models/roc_curves.png)  
+
+### Logistic Regression
 ![Logistic Regression Confusion Matrix](src/models/logistic_regression_confusion_matrix.png)
+
+### Random Forest
+![Random Forest Confusion Matrix](src/models/random_forest_confusion_matrix.png)
+
+### SVM
+![SVM Confusion Matrix](src/models/svm_confusion_matrix.png)
+
+### ROC Curves
+![ROC Curves](src/models/roc_curves.png)
 
 ---
 
